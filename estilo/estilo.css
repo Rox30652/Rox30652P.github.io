@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+    :root {
+        --primary-color: #ff7613;
+        --text-color: #727171;
+    }
+    html {
+        font-size: 10px;
+    }
+    body {
+        font-family: Inter, sans-serif;
+        background-color: black;
+        color: white;
+    }
+
+    /* common styles */
+    img {
+        width: 100%;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .description {
+        margin-top: 1.2rem;
+        font-size: 1.3rem;
+        font-weight: 400;
+        color: var(--text-color);
+        margin-bottom: 1rem;
+    }
+    .title {
+        margin-top: 1.5rem;
+        margin-bottom: 1.2rem;
+        color: var(--primary-color);
+        font-weight: 700;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        }
+
+    /* layouts */
+    .container {
+        max-width: 1000px;
+        width: 90%;
+        margin: 0 auto;
+        display: grid;
+        padding: 5rem;
+        background: rgb(240, 155, 124);
+        grid-template-columns: 1fr 1fr;
+        gap: 1.2rem;
+    }
+    @media only screen and (max-width: 768px) {
+        .container {
+            width: 100%;
+            grid-template-columns: 1fr;
+            padding: 3rem;
+            gap: 1rem;
+        }
+    }
+    .profile {
+        grid-column: 1 / -1;
+        margin-bottom: 1rem;
+    }
+    .group-1 
+    .group-2 {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+    .group-3 {
+        max-width: 700px;
+        width: 100%;
+        margin: 0 auto;
+        grid-column: 1/-1;
+        display: flex;
+        flex-direction: row;
+        gap: 5rem;
+        margin-bottom: 0rem;
+    }
+    .group-3 > div {
+        flex: 1;
+        
+                       
+    }
+@media only screen and (max-width: 768px) {
+    .profile{
+        margin-bottom: 0rem;
+    }
+    .group-3 {
+        flex-direction: column;
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+             
+    }
+   } 
+   
+    
+    /* profile */
+    .profile_container {
+        display: flex;
+        gap: 2rem;
+    }
+    .profile_profileImg {
+        max-width: 250px;
+    }
+    .profile_name_firstName {
+        color: white;
+        font-size: 200;
+        font-size: clamp(2rem, 8vw, 4rem);
+        text-transform: uppercase;
+        display: block;
+        margin-bottom: 2rem;
+    }
+    .profile_name_lastName {
+        color: white;
+        font-weight: 700;
+        font-size: clamp(2.5rem, 15vw, 7rem);
+        text-transform: uppercase;
+        display: block;
+    }
+    .profile_title {
+        font-size: 1.5rem;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    .boton {
+        background-color: #fb8033; 
+        border: none;
+        color: white;
+        padding: 0.3rem;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1rem;
+        margin-top: 1.8rem;
+        margin-bottom: 1rem;
+        line-height: 2;
+      }
+    .descargarcv {
+        display: block;
+        text-decoration: underline;
+        font-size: 1.6rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        margin-left: 0rem;
+    }
+    .descargarcv:hover {
+        color: var(--primary-color);
+    }
+
+    @media only screen and (max-width: 768px) {
+        .profile_container {
+            flex-direction: column;
+        }
+    }
+
+    /* Formación Académica */
+    .skill_list {
+        margin-top: 1rem;
+        margin-left: 2rem;
+        line-height: 2;
+        }
+
+    /* Ref */
+    .ref_item {
+        margin-top: 2rem;
+    }
+    .ref_name {
+        font-size: 1.6rem;
+        font-weight: 700;
+    }
+
+/* exp */
+.exp_item {
+margin-top: 1rem;
+}
+
+hr{
+    grid-column: 1/-1;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    border: none;
+    border-top: 1px solid rgb(147, 147, 147);
+    }
+
+@media only screen and (max-width: 768px) {
+    hr {
+       margin: 0 auto;
+       
+    }
+}
